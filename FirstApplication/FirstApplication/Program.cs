@@ -6,26 +6,28 @@ namespace FirstApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(7 * 5);
-            Console.WriteLine(7 * 5 * 3);
-            Console.WriteLine(5/2); //Se ofrece el resultado del mismo tipo de dato de los operandos
-            Console.WriteLine(5.0 / 2.0); //Se toman como double
-            Console.WriteLine(5 / 2.0); //Entero/Decimal → Decimal
-            Console.WriteLine(9%4);
+            int edadPersona1;
+            int edadPersona2;
+            int edadPersona3;
+            int edadPersona4;
 
-            int edad = 19;
+            //Asignación del mismo valor
 
-            Console.WriteLine("Tienes una edad de: "+ edad + " años"); //Concatenación con +
-            Console.WriteLine($"Tienes una edad de: {edad} años"); //Interpolación de String
+            edadPersona1= edadPersona2= edadPersona3= edadPersona4=27;
 
-            //Uso como sufijo
+            Console.WriteLine(edadPersona4);
 
-            edad++; //Incremento
-            edad--; //Decremento
-            
-            //Uso como prefijo
-            Console.WriteLine($"Tienes una edad de: {++edad} años"); 
-            Console.WriteLine($"Tienes una edad de: {--edad} años"); 
+            //Declarar variables con el mismo tipo de dato
+            //int edadPersona1, edadPersona2, edadPersona3, edadPersona4;
+
+
+            //Declaración implicita de variables
+
+            var edadPersona = 27;
+
+            edadPersona = 27.5; //Se debe respetar el tipo en toda la ejecución del programa
+
+            Console.WriteLine(edadPersona);
 
         }
 
