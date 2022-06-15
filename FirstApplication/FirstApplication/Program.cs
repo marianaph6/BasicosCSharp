@@ -6,20 +6,25 @@ namespace FirstApplication
     {
         static void Main(string[] args)
         {
-            double temperatura = 34.5;
-            int temperaturaMadrid;
+            Console.WriteLine("Introduce el primer número");
 
-            //Conversión explicita → casting
+            // Console.ReadLine(); //Introducir valor por consola
+            
+            /*
+             * Guardar valor digitado en una variable
+             * Un string no se puede convertir implicitamente a int
+             */
+            //int num1 = Console.ReadLine();
 
-            temperaturaMadrid = (int) temperatura;
+            //Convertir string a int
+            int num1 =int.Parse(Console.ReadLine());
 
-            //Conversión implicita
-            int habitantesCiudad = 100000;
-            long habitantesCiudad2018 = habitantesCiudad;
+            Console.WriteLine("Introduce el segundo número");
 
-            float pesoMaterial = 5.78F;
+            int num2 = int.Parse(Console.ReadLine());
 
-            double pesoMaterialPrec = pesoMaterial;
+            Console.WriteLine($"El resultado es {num1+num2}");
+
 
 
 
