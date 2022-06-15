@@ -6,28 +6,22 @@ namespace FirstApplication
     {
         static void Main(string[] args)
         {
-            int edadPersona1;
-            int edadPersona2;
-            int edadPersona3;
-            int edadPersona4;
+            double temperatura = 34.5;
+            int temperaturaMadrid;
 
-            //Asignación del mismo valor
+            //Conversión explicita → casting
 
-            edadPersona1= edadPersona2= edadPersona3= edadPersona4=27;
+            temperaturaMadrid = (int) temperatura;
 
-            Console.WriteLine(edadPersona4);
+            //Conversión implicita
+            int habitantesCiudad = 100000;
+            long habitantesCiudad2018 = habitantesCiudad;
 
-            //Declarar variables con el mismo tipo de dato
-            //int edadPersona1, edadPersona2, edadPersona3, edadPersona4;
+            float pesoMaterial = 5.78F;
+
+            double pesoMaterialPrec = pesoMaterial;
 
 
-            //Declaración implicita de variables
-
-            var edadPersona = 27;
-
-            edadPersona = 27.5; //Se debe respetar el tipo en toda la ejecución del programa
-
-            Console.WriteLine(edadPersona);
 
         }
 
