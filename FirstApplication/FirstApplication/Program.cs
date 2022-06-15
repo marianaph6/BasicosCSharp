@@ -1,16 +1,26 @@
-﻿class Program
+﻿using System;
+
+namespace FirstApplication
 {
-    //Main method 
-    static void Main(string[] args)
+    //Class
+    class Program
     {
-        //Sentece or Instruction
-        //Instancia.Metodo
-        Console.WriteLine("Welcome to my Firt Application!"); // Print message to console
+        //Main method 
+        static void Main(string[] args)
+        {
+            //Sentece or Instruction
+            //Instancia.Metodo
+            Console.WriteLine("Welcome to my Firt Application!"); // Print message to console
+
+            int edad; //Declarar
+            edad = 2; //Inicializar
+            Console.WriteLine(edad);
+        }
+
+        /*
+         * Esto es un comentario
+         * Esto es otro comentario
+         */
     }
 
-    /*
-     * Esto es un comentario
-     * Esto es otro comentario
-     */
 }
-
