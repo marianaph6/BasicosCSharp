@@ -6,45 +6,43 @@ namespace EjemplosPOO
     {
         static void Main(string[] args)
         {
-
-            Circulo circulo;
-            circulo = new Circulo(); //Iniciación de variable objeto de tipo circulo
-            Console.WriteLine(circulo.CalcularArea(47));
-
-            ConversorEuroDolar obj = new ConversorEuroDolar();
-
-            obj.cambiarValorEuro(1.45);
-            Console.WriteLine(obj.convierte(50));
+            Coche coche =  new Coche();
+            
         }
+
     }
 
-    class Circulo
+    class Coche 
     {
-        private const double pi = 3.1416; //propiedad de la clase
-
-        public double CalcularArea(int radio) // metodo de la clase
+        //Dar estado inicial a los objetos de tipo coche
+        public Coche() 
         {
-            return (radio * pi * pi);
-
+            ruedas = 4;
+            largo = 2300.5;
+            ancho = 0.800;
         }
 
+        //Dar estado inicial a los objetos de tipo coche con parametros
+        public Coche(double largoCoche, double anchoCoche)
+        {
+            ruedas = 4;
+            largo = largoCoche;
+            ancho = anchoCoche;
+        }
+
+
+
+
+        public String getInfoCoche() 
+        {
+            return $"Información del coche: Ruedas: {ruedas} Largo: {largo} Ancho: {ancho}";
+        }
+        private int ruedas;
+        private double largo, ancho;
+        private bool climatizador;
+        private String tapiceria;
     }
 
-    class ConversorEuroDolar
-    {
-        private double euro = 1.253;
 
-        public double convierte(double cantidad) 
-        {
-            return euro * cantidad;
-        
-        }
-
-        public void cambiarValorEuro(double nuevoValor) 
-        {
-            if(nuevoValor < 0) euro = 1.253;
-            else euro = nuevoValor;
-        }
-    }
 
 }
