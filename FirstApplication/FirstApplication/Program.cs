@@ -24,7 +24,7 @@ namespace FirstApplication
 
         }
         //no se puede hacer sobre carga de metodos (mismo nombre y misma cantidad de parametros y mismo tipo de datos)
-        static int Suma (int operador1, int operador2) => operador1 + operador2;    
+        static int Suma(int operador1, int operador2) => operador1 + operador2;
 
 
         static double calcularArea(double radio, double PI)
@@ -55,6 +55,11 @@ namespace FirstApplication
             Console.WriteLine(numero1 + numer2);
 
         }
+
+        //Parametros opcionales
+        private static double Suma(int num1, int num2, double num3 = 0) => num1 + num2;
+
+
     }
 }
 
