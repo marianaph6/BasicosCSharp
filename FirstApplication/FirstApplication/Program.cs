@@ -6,25 +6,30 @@ namespace FirstApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Introduce el primer número");
+            const int VALOR = 5;
 
-            // Console.ReadLine(); //Introducir valor por consola
-            
+            const int VALOR2 = 6;
+
+            // cw+TAB → Console.WriteLine();
+            Console.WriteLine("El valor de la constante es: ", VALOR); //Imprimir con parametros
+
+            Console.WriteLine("El valor de la constante es: {0} ", VALOR, VALOR2); //Imprimir con el parametro 1 
+
+            Console.WriteLine("El valor de la constante es: {1} ", VALOR, VALOR2); //Imprimir con el parametro 1 
+
             /*
-             * Guardar valor digitado en una variable
-             * Un string no se puede convertir implicitamente a int
+             * Ejemplo de calculo de area
              */
-            //int num1 = Console.ReadLine();
 
-            //Convertir string a int
-            int num1 =int.Parse(Console.ReadLine());
+            const double PI = 3.1416;
 
-            Console.WriteLine("Introduce el segundo número");
+            Console.WriteLine("Introduce el radio");
 
-            int num2 = int.Parse(Console.ReadLine());
+            double radio= double.Parse(Console.ReadLine());
+            //double area = radio * radio * PI;
+            double area = Math.Pow(radio,2)* PI;
 
-            Console.WriteLine($"El resultado es {num1+num2}");
-
+            Console.WriteLine($"El area del circulo es: {area}");
 
 
 
