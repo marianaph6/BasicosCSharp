@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.Correct
+namespace SOLID.Wrong
 {
-    internal class DIP
+    internal class DIPWrong
     {
     }
 }
