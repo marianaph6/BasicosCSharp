@@ -2,7 +2,7 @@
 
 namespace APIUsers.Models
 {
-    public class Users
+    public class User
     {
         //prop+ double TAB → public int MyProperty { get; set; }
 
